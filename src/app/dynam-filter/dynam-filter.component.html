@@ -1,0 +1,5 @@
+<input type="text" [formControl]="filter" placeholder="Filter fields..."/>
+
+<ul>
+  <li *ngFor="let field of filteredFields$ | async">{{field.name}}</li>
+</ul>
